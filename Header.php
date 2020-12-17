@@ -53,7 +53,7 @@
             <ul class="nav navbar-nav">
                 <li><a style = "font-size: 30px;" href="MainApp.php">Home</a></li>
    				<li><a style = "font-size: 30px;" href="InformationDetail.php">Top 10</a></li>
-   				<li><a style = "font-size: 30px;" href="#portfolio">Profile</a></li>
+   				<li><a style = "font-size: 30px;" href="profile.php">Profile</a></li>
             </ul>
 
             <a href = "Favorite.php" style = "background-color:#f8f8f8; border : none;">
@@ -64,7 +64,7 @@
 
             </a>
 
-            <a  style = "background-color:#f8f8f8; border : none">
+            <a href = "Cart.php" style = "background-color:#f8f8f8; border : none">
                 <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-cart4 icon-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
                 </svg>

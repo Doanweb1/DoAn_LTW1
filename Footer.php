@@ -1,8 +1,7 @@
-<div class="footer-container">
-        
+<div style = "width : 100%; height : 450px;" class="footer-container">
        
         <h1 style = "color : white; margin-left: 50%; margin-top: 100px;" class="brand brand-name navbar-left"><div  style = "color : white; text-align: center;"  class = "navbar-left">Shoes</div></h1>
-        
+        <!-- <h1 style = "color : white; text-align: center;" class="brand brand-name navbar-left">Shoes</h1> -->
         <h5 style = "color : white; margin-left: 9%; margin-top: 200px;" >FLOW US</h5>
 
         <svg class = "icon-flow1" viewBox="0 0 50 50" id="icon-social-facebook-round">
@@ -27,8 +26,6 @@
 
         <div class="about-shoes">
             <h5 style="margin-left: 70px;">
-
-            
                 About Us | 
                 Blog | 
                 Insights | 
