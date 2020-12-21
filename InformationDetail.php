@@ -26,8 +26,8 @@ include "Header.php"
                 <h3 style="text-align: center; margin-top: 40px;">SupperStart</h3>
                 <h5 style = "margin-top: 40px;" >Fit Predictor Calculate your size</h5>
 
-                <div style = "width:300px; height: 50px;">
-                    <select style = "width:400px; height: 50px; border-radius: 5px; font-size: 20px;">
+                <div style = "width:100%; height: 50px;">
+                    <select style = "width:100%; height: 50px; border-radius: 5px; font-size: 20px;">
                       <option value="0">Select size adidas</option>
                       <option value="7">7 US</option>
                       <option value="8.5">8.5 US</option>

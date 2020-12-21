@@ -84,7 +84,7 @@ html {
 
 .container-left
 {
-    margin-top: 80px;
+    margin-top: 10px;
     float : left;
     height: 1080px;
     width: 250px;
@@ -95,14 +95,11 @@ html {
 
 .container-right
 {
-    margin-top: 80px;
+    margin-top: 100px;
     margin-left: 20px;
-    float: left;
-    height: 1000px;
-    width: 870px;
+    height: 1600px;
+    width: 80%;
     background-color: white;
-
-
     display: flex;
     justify-content : space-around;
     flex-direction: row;
@@ -130,14 +127,12 @@ html {
 
 .item-Main
 {
-    margin-top: 40px;
-    width: 250px;
+    margin-top: 5px;
+    width: 260px;
     height: 300px;
-    /* background-color: turquoise; */
+    background-color:#dbdbdb;
     float: left;
-
-
-    
+    border-radius: 10px;
 }
 
 .item-img
@@ -392,3 +387,35 @@ a
    
 }
 
+
+
+.btn-next-prev
+{
+    width : 100%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+}
+
+.btn-transform1
+{
+    width : 100px;
+    height: 30px;
+    margin-left: 38%;
+    margin-top: 10px;
+}
+
+.btn-transform2
+{
+    width : 100px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.page
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
