@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href="./CSS/MainApp.css">
+    <link rel = "stylesheet" type = "text/css"  href="./CSS/MainApp.css">
     <title>Shoes</title>
 
     
@@ -52,7 +52,7 @@
         <div class="collapse navbar-collapse navbar-right" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li><a style = "font-size: 30px;" href="MainApp.php">Home</a></li>
-   				<li><a style = "font-size: 30px;" href="InformationDetail.php">Top 10</a></li>
+   				<li><a style = "font-size: 30px;" href="Top.php">Top 10</a></li>
    				<li><a style = "font-size: 30px;" href="profile.php">Profile</a></li>
             </ul>
 
@@ -76,5 +76,7 @@
 
     </div>
 </nav>
+
+
 
 </head>
