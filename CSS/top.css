@@ -1,0 +1,47 @@
+.nav {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+.buttonNav {
+    margin-right: 10%;
+}
+
+.nav-link {
+    color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    padding: 10px 20px;
+    background: rgb(204, 204, 204);
+}
+
+.nav-link:hover {
+    color: black;
+    background: rgb(204, 204, 204);
+}
+
+.nav-tabs .nav-link.active {
+    background: gray;
+    color: white;
+}
+
+.toBad {
+    margin-top: 7px;
+    background: White;
+    color: black;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 12px 35px;
+    border-radius: 30px;
+}
+
+.toBad:hover {
+    background: rgb(204, 204, 204);
+}
+
+img {
+    width: 367px;
+    height: 351px;
+}
