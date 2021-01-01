@@ -1,5 +1,41 @@
-<?php 
+<?php
 include "Header.php";
+include "Function.php";
+
+
+    $ID = $_POST['id-Detail'];
+
+
+    if(isset($_POST['btn-comment']))
+    {
+        $GLOBALS['ID'] = $_POST['btn-comment'];
+        $comment = $_POST['input-comment'];
+        $date = date("Y-m-d");
+
+        var_dump($GLOBALS['ID']);
+        var_dump($comment);
+        var_dump($date);
+
+        $db1 = new PDO('mysql:host=localhost;dbname=doan_ltw1;charset=utf8', 'root', 'admin');
+        $stmt1 = $db1->prepare("INSERT INTO comments (IDCustomer, IDItem, COMMENT, dateComment) value ('1', ?, ?, ?);");
+        $stmt1->execute(array($GLOBALS['ID'], $comment, $date));
+    }
+
+    // var_dump($ID);
+    $db = new PDO('mysql:host=localhost;dbname=doan_ltw1;charset=utf8', 'root', 'admin');
+    $stmt = $db->prepare("SELECT * FROM Item where id = ?");
+    $stmt->execute(array($ID));
+
+    // lấy toàn bộ data
+    $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+   
+    $item = $data[0];
+
+   
+
+    AddToBag();
+
+    AddFavorite();
 
 ?>
 
@@ -24,8 +60,16 @@ include "Header.php";
 
         <div class="ID-container-Right">
 
-            <h1 style="text-align: center; margin-top: 100px;">adidas</h1>
-            <h3 style="text-align: center; margin-top: 40px;">SupperStart</h3>
+
+            <?php
+
+                echo '
+                <h1 style="text-align: center; margin-top: 100px;">'. $item['NameItem'] . '</h1>
+                <h3 style="text-align: center; margin-top: 40px;">'. $item['trademark'] . '</h3>';
+
+
+            ?>
+
             <h5 style = "margin-top: 40px;" >Fit Predictor Calculate your size</h5>
 
             <div style = "width:100%; height: 50px;">
@@ -38,49 +82,49 @@ include "Header.php";
                 </select>
             </div>
 
-            <button class="btn-ID-add">Add to bag</button>
-            <button class="btn-ID-WishList">Add to bag</button>
+            <?php  
+                echo   
+                '
+                <form method = "POST">
 
+                    <button class="btn-ID-add" name = "id-item-add-bag" value = "'. $item['id'] .'">Add to bag</button>
 
+                </form>
+                <form action = "InformationDetail.php" method = "POST">
 
+                    <button class="btn-ID-WishList" name = "add-item-favorite" value = "'. $item['id'] .'" >Add to favorite</button>
 
-
-            <div style = "margin-left : 0px; width : 100%; margin-top : 50px; text-algin : center;" class="ID-Footer-Left">
-                <h3>
-                    Jordan
-                </h3>
-                <h4>
-                    Air Jordan 1 High OG twist
-                </h4>
-                <h5>
+                </form>';
     
-                </h5>
-                Supplied by a premier sneaker marketplace dealing with unworn, already sold out, in demand rarities. Each product is rigorously inspected by experienced experts guaranteeing authenticity. If you're an avid sneakerhead, chances are you won't want to pass up on these. Crafted from black and white leather, the Air Jordan 1 High OG twist from Jordan are ready to help you shoot and score. Alley-op. Featuring a round toe, a lace fastening, a flat rubber sole and a signature Nike swoosh.
-                </h5>
-            </div>
-
-
-
-            <div style = "margin-left : 0px; width : 100%; margin-top : 50px; text-algin : center;"class="ID-Footer-Right">
-
-                <h4>Composition</h4>
-                <h4>Outer: Leather 100%</h4>
-
-                <h4>Lining: Polyester 100%</h4>
-
-                <h4>Sole: Rubber 100%</h4>
-
-                <h4>Designer Style ID: CD0461007</h4>`
-
-
-            </div>
-
+    
+            ?>
             
-           
-            
-            
-           
 
+
+            <?php 
+            
+            echo '<div style = "margin-left : 0px; width : 100%; margin-top : 50px; text-algin : center;" class="ID-Footer-Left">
+
+            <h3>
+                '. $item['NameItem'] .'
+            </h3>
+
+            <h5>
+            '. $item['infomation'] .'
+            </h5>
+        </div>
+        
+        
+        
+        <div style = "margin-left : 0px; width : 100%; margin-top : 50px; text-algin : center;"class="ID-Footer-Right">
+
+                <h4>
+                '. $item['detail'] .'
+                </h4>
+
+            </div>';
+
+        ?>
 
 
         </div>
@@ -88,16 +132,16 @@ include "Header.php";
         <div style = "width : 100%; margin-top : 50px; text-algin : center; margin-left : 0px;" class="ID-Footer">
 
 
-            
 
-            <?php 
+
+            <?php
 
             include "comment.php";
             include "Footer.php";
-             ?> 
-            
+             ?>
+
         </div>
-           
+
 
     </div>
 </body>

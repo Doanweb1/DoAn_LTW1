@@ -1,6 +1,9 @@
 <?php 
     include "Header.php";
-    include "CSS/index.css";
+    include "Function.php";
+
+
+    
 ?>
 
 
@@ -16,90 +19,22 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" /> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/> -->
     
-    <link rel = "stylesheet" type="text/css" href = "CSS/index.css">
+    <link rel = "stylesheet" type="text/css" href = "CSS/favorite.css">
 
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" /> -->
 </head>
 
 <body>
     <div >
-        <h1 style = "text-algin : center; margin-top : 100px; margin-left: 48%" >Favourites</h1>
-        <div class = "container-favorite-allItem">
+        <h1 style = "text-algin : center; margin-top : 100px;" >Favourites</h1>
 
-            <div class="d-flex">
-                <div class="mr-5 item-favorite">
-                    <img src="https://images.nike.com/is/image/DotCom/CT1682_002_A_PREM?align=0,1&cropN=0,0,0,0&resMode=sharp&fmt=jpg&bgc=f5f5f5" alt="" />
-                    <div>
-                        <p>Name</p>
-                        <span> Cost </span>
-                    </div>
 
-                    <button class="toBad btn-addBag-favorite">add to bad</button>
-                </div>
 
-                <div class="mr-5 item-favorite">
-                    <img src="https://images.nike.com/is/image/DotCom/CT1682_002_A_PREM?align=0,1&cropN=0,0,0,0&resMode=sharp&fmt=jpg&bgc=f5f5f5" alt="" />
-                    <div>
-                        <p>Name</p>
-                        <span> Cost</span>
-                    </div>
+        <?php LoadItemFavorite();   ?>
 
-                    <button class="toBad">add to bad</button>
-                </div>
-
-                <div style = "float : left;" class="mr-5 item-favorite">
-                    <img src="https://images.nike.com/is/image/DotCom/CT1682_002_A_PREM?align=0,1&cropN=0,0,0,0&resMode=sharp&fmt=jpg&bgc=f5f5f5" alt="" />
-                    <div>
-                        <p>Name</p>
-                        <span> Cost</span>
-                    </div>
-
-                    <button class="toBad">add to bad</button>
-                </div>
-
-            </div>
-        </div>
 
     </div>
-    <!-- <div>
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <h4>1</h4>
-            </div>
-            <div class="item">
-                <h4>2</h4>
-            </div>
-            <div class="item">
-                <h4>3</h4>
-            </div>
-            <div class="item">
-                <h4>4</h4>
-            </div>
-            <div class="item">
-                <h4>5</h4>
-            </div>
-            <div class="item">
-                <h4>6</h4>
-            </div>
-            <div class="item">
-                <h4>7</h4>
-            </div>
-            <div class="item">
-                <h4>8</h4>
-            </div>
-            <div class="item">
-                <h4>9</h4>
-            </div>
-            <div class="item">
-                <h4>10</h4>
-            </div>
-            <div class="item">
-                <h4>11</h4>
-            </div>
-            <div class="item">
-                <h4>12</h4>
-            </div>
-        </div> -->
+   
     </div>
 
     

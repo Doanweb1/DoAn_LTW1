@@ -8,37 +8,25 @@ include "navigationChose.php";
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+<link rel = "stylesheet" href = "./CSS/MainApp.css">
+
 <body>
 <div style = "margin : 0px; margin-right: 0px; padding : 0px;">
 
 
     <form style = "margin-top : 50px; margin-left : 40%;" class="example" action="action_page.php">
-        <div style = "width:30%; height: 50px; margin-top: 40px; color : black;">
-            <select style = "width:100%; height: 50px; border-radius: 5px; font-size: 20px;">
-              <option value="gender">Trademark</option>
-              <option value="man"> Adidas</option>
-              <option value="women"> Nike</option>
-              <option value="women"> Balenciaga</option>
-              <option value="women"> Ananas</option>
-              <option value="women"> Bitis</option>
-              <option value="women"> Puma</option>
-              <option value="women"> Converse</option>
-              <option value="women"> Vans</option>
-              <option value="women"> Muzino</option>
-
-            </select>
-        </div>
+        <input style = "width : 250px; color : black;" type="text" placeholder="Search..." name="search">
+        <button type="submit" style = "background-color : black; width : 50px;" ><i class="fa fa-search"></i></button>
     </form>
 
     <div class="container-right">
 
 
     <?php 
-        LoadItemTrademark('adidas');
+            LoadItem('Sport');
     ?>
 
     </div>
-
 
     <div class = "btn-next-prev">
            

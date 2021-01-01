@@ -6,6 +6,7 @@
 .product-details {
   float: left;
   width: 37%;
+
 }
  
 .product-price {
@@ -233,4 +234,11 @@ label {
 }
 .product-title{
   color: orange;
+}
+
+
+.btn-quantity
+{
+  background-color: black;
+  color : white;
 }

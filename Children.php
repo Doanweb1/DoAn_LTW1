@@ -1,7 +1,6 @@
 <?php 
 include "Header.php";
 include "navigationChose.php";
-include "Function.php";
 ?>
 
 <!DOCTYPE html>
@@ -21,8 +20,8 @@ include "Function.php";
     <div class="container-right">
 
 
-        <?php 
-            LoadImgMain('Women');
+    <?php 
+            LoadItem('Child');
         ?>
 
     </div>

@@ -9,13 +9,6 @@
     <link rel="stylesheet" href="./CSS/profile.css">
 </head>
 
-
-
-
-
-
-
-
 <body style = "margin-top : 120px;" >
 
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
